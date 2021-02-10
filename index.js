@@ -4,7 +4,13 @@ const buttons = document.querySelectorAll("button");
   button.addEventListener(
     "click",
     function () {
-      window.location = "thankyou.html";
+      //Lägg in och fyll datalagret vid checkout
+
+      window.location =
+        "thankyou.html?product=" +
+        button.getAttribute("data-product") +
+        "&price=" +
+        button.getAttribute("data-price");
     },
     false
   );
