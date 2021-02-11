@@ -11,7 +11,7 @@ const buttons = document.querySelectorAll("button");
 
       dataLayer.push({
         event: "Checkout",
-        product: "button.getAttribute("data-product")"
+        product: button.getAttribute("data-product")
        });
 
       window.location =
